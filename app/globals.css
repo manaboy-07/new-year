@@ -6,7 +6,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   color: #333;
   background-color: #239ac2;
 }
@@ -23,8 +23,8 @@ body {
 }
 .birthdayCard {
   position: relative;
-  width: 400px;
-  height: 450px;
+  width: 300px;
+  height: 350px;
   cursor: pointer;
   transform-style: preserve-3d;
   transform: perspective(2500px);
@@ -55,7 +55,7 @@ body {
 .cardFront {
   position: relative;
   background-color: #fff;
-  width: 650px;
+  width: 600px;
   padding: 3px;
   height: 550px;
   overflow: hidden;
@@ -172,7 +172,7 @@ body {
 .cardInside {
   position: absolute;
   background-color: #fff;
-  width: 650px;
+  width: 600px;
   height: 550px;
   padding: 3px;
   z-index: -1;
