@@ -6,7 +6,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 80vh;
   color: #333;
   background-color: #239ac2;
 }
@@ -26,6 +26,7 @@ body {
   width: 300px;
   height: 350px;
   cursor: pointer;
+  margin-right: 70px;
   transform-style: preserve-3d;
   transform: perspective(2500px);
   transition: 1s;
@@ -66,6 +67,8 @@ body {
 }
 .birthday-girl {
   border: #13a9bd;
+  width: 550px;
+  height: 450px;
   border-radius: 50%;
 }
 .happy {
@@ -114,7 +117,7 @@ body {
 
 .balloon-3 {
   background-color: rgba(255, 186, 26, 0.7);
-  left: 460px;
+  left: 430px;
   width: 85px;
   height: 95px;
   top: 50px;
@@ -122,7 +125,7 @@ body {
 
 .balloon-4 {
   background-color: rgba(12, 122, 159, 0.7);
-  left: 525px;
+  left: 500px;
   width: 85px;
   height: 95px;
   top: 22px;
