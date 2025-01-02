@@ -76,21 +76,19 @@ export default function Home() {
                 <AiOutlineArrowLeft onClick={() => setopenCard(false)} />
               </h3>
               <h1 className={"text"}>
-                Here's a New Year greeting message tailored for your shipping
-                service company, **Glorious Lane LLC**: --- **🎉 Happy New Year
-                from Glorious Lane LLC! 🎉** As we welcome 2025, we want to
-                express our heartfelt gratitude for your trust and support over
-                the past year. At **Glorious Lane LLC**, our commitment to
-                delivering excellence and ensuring timely, reliable shipping
-                services remains as strong as ever. We are excited to continue
-                providing you with seamless, efficient solutions in the year
-                ahead. Whether it's local or international shipping, rest
-                assured that we will continue to go above and beyond to make
-                your logistics experience smooth and successful. May this year
-                bring you new opportunities, growth, and prosperity. We look
-                forward to being part of your journey in 2025! Thank you for
-                choosing Glorious Lane LLC. Wishing you a year full of success
-                and joy! **Happy New Year!** 🎊
+                Happy New Year from Glorious Lane LLC! 🎉** As we welcome 2025,
+                we want to express our heartfelt gratitude for your trust and
+                support over the past year. At **Glorious Lane LLC**, our
+                commitment to delivering excellence and ensuring timely,
+                reliable shipping services remains as strong as ever. We are
+                excited to continue providing you with seamless, efficient
+                solutions in the year ahead. Whether it's local or international
+                shipping, rest assured that we will continue to go above and
+                beyond to make your logistics experience smooth and successful.
+                May this year bring you new opportunities, growth, and
+                prosperity. We look forward to being part of your journey in
+                2025! Thank you for choosing Glorious Lane LLC. Wishing you a
+                year full of success and joy! **Happy New Year!** 🎊
               </h1>
             </div>
           </div>
