@@ -1,9 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import girl from "../assets/momus.jpg";
+
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import Confetti from "react-confetti";
+
+import imgGif from "../assets/rcg-3.gif";
 export default function Home() {
   const [openCard, setopenCard] = useState<boolean>(false);
 
@@ -43,38 +45,54 @@ export default function Home() {
       )}
       <div className={`${openCard ? "hoverCard" : null} birthdayCard`}>
         <div className="cardFront">
-          <h3 className="happy p-2 text-xl flex justify-center items-center text-center">
-            <span className="mx-2"> HAPPY BIRTHDAY</span>{" "}
-            <AiOutlineArrowRight onClick={toggleCard} />{" "}
+          <h3 className="happy  text-xl flex flex-col justify-center items-center text-center">
+            <span className="mx-2 block"> HAPPY NEW YEAR !!!</span> <br />
+            <small className="block text-center text-sm ">
+              <span className="flex gap-1">
+                we got a message for you
+                <AiOutlineArrowRight onClick={toggleCard} />{" "}
+              </span>
+            </small>
           </h3>
           <div className="balloons">
             <div className="balloon-1"></div>
             <div className="balloon-2"></div>
 
             <section className="balloon-5">
-              <Image src={girl} alt="bithday" className="birthday-girl" />
+              <Image src={imgGif} alt="bithday" className="birthday-girl" />
             </section>
             <div className="balloon-3"></div>
             <div className="balloon-4"></div>
           </div>
         </div>
         <div className="cardInside p-5 flex flex-col text-xl text-black">
-          <h3 className="back text-xl flex justify-center items-center text-center">
-            <span className="mx-4"> HAPPY BIRTHDAY</span>{" "}
-            <AiOutlineArrowLeft onClick={() => setopenCard(false)} />
-          </h3>
-          <div className="flex p-5">
-            <h2>Dear Mummy U.S ,</h2>
-          </div>
-          <div className="p-5">
-            Happy 59th Birthday! On this special day, I want to express my
-            deepest gratitude for all the support and love you've given me over
-            the years. Your generosity, especially your financial help, has been
-            a true blessing, enabling me to pursue my dreams and overcome
-            challenges. I am incredibly fortunate to have you in my life, and I
-            hope this year brings you as much joy and happiness as you have
-            given me. May your birthday be filled with love, laughter, and
-            wonderful memories. <br /> <br /> Much love form your nephew OSE
+          <div className="container">
+            <div className={"overlay"}>
+              <h3 className="back text text-xl flex justify-center items-center text-center">
+                <span className="mx-4 font-bold text-2xl text-white">
+                  {" "}
+                  Welcome to 2025
+                </span>{" "}
+                <AiOutlineArrowLeft onClick={() => setopenCard(false)} />
+              </h3>
+              <h1 className={"text"}>
+                Here's a New Year greeting message tailored for your shipping
+                service company, **Glorious Lane LLC**: --- **🎉 Happy New Year
+                from Glorious Lane LLC! 🎉** As we welcome 2025, we want to
+                express our heartfelt gratitude for your trust and support over
+                the past year. At **Glorious Lane LLC**, our commitment to
+                delivering excellence and ensuring timely, reliable shipping
+                services remains as strong as ever. We are excited to continue
+                providing you with seamless, efficient solutions in the year
+                ahead. Whether it's local or international shipping, rest
+                assured that we will continue to go above and beyond to make
+                your logistics experience smooth and successful. May this year
+                bring you new opportunities, growth, and prosperity. We look
+                forward to being part of your journey in 2025! Thank you for
+                choosing Glorious Lane LLC. Wishing you a year full of success
+                and joy! **Happy New Year!** 🎊
+              </h1>
+            </div>
           </div>
         </div>
       </div>

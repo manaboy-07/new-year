@@ -8,7 +8,7 @@ body {
   justify-content: center;
   height: 80vh;
   color: #333;
-  background-color: #239ac2;
+  background-color: #c0c0c0;
 }
 
 .red-gradient {
@@ -27,6 +27,7 @@ body {
   height: 350px;
   cursor: pointer;
   margin-right: 70px;
+  margin-bottom: 40px;
   transform-style: preserve-3d;
   transform: perspective(2500px);
   transition: 1s;
@@ -174,7 +175,7 @@ body {
 
 .cardInside {
   position: absolute;
-  background-color: #fff;
+  background-color: #f2eded;
   width: 600px;
   height: 550px;
   padding: 3px;
@@ -204,4 +205,32 @@ p {
   margin: 30px;
   outline-color: #333;
   outline-style: dotted;
+}
+
+/* BackgroundWithText.module.css */
+
+.container {
+  /* Make the div take up the full viewport height */
+  height: 100vh;
+  /* Set the background image */
+  background-image: url("/image/bells.jpg"); /* Path to your image in the public folder */
+  background-size: cover; /* Make sure the image covers the entire div */
+  background-position: center; /* Center the background image */
+  display: flex; /* Use flexbox to center the text */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+}
+
+.overlay {
+  /* To ensure the background is visible but with some overlay */
+  background: rgba(0, 0, 0, 0.6); /* 50% black overlay for contrast */
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.text {
+  color: white; /* Text color */
+  font-size: 1rem; /* Font size */
+  font-weight: bold;
+  text-align: center; /* Center the text */
 }
